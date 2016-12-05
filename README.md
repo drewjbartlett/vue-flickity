@@ -11,7 +11,7 @@ See official documentation [here](http://flickity.metafizzy.co/).
     $ npm install vue-flickity
 
 ```javascript
-import Slick from 'vue-slick';
+import Flickity from 'vue-flickity';
 
 new Vue({
 
