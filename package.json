@@ -1,0 +1,29 @@
+{
+  "name": "vue-flickity",
+  "version": "1.0.0",
+  "description": "A Vue Component for Flickity.js (http://flickity.metafizzy.co/).",
+  "main": "flickity.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": ["vueify"]
+  },
+  "keywords": [
+    "flickity",
+    "responsive",
+    "touch",
+    "carousel",
+    "vue"
+  ],
+  "author": "Drew J Bartlett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewjbartlett/vue-flickity/issues"
+  },
+  "homepage": "https://github.com/drewjbartlett/vue-flickity#readme",
+  "devDependencies": {
+    "flickity": "^2.0.5",
+    "vue": "^2.1.4"
+  }
+}
