@@ -53,6 +53,7 @@ new Vue({
     <div class="carousel-cell">5</div>
 </flickity>
 
+<!-- if you don't want to use the buttons Flickity provides -->
 <button @click="previous()">Custom Previous Button</button>
 <button @click="next()">Custom Next Button</button>
 ```
