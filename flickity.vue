@@ -8,13 +8,6 @@
 import Flickity from 'flickity';
 
 export default {
-
-    data () {
-        return {
-            flickity: {}
-        }
-    },
-
     props: {
         options: {
             type: Object,
