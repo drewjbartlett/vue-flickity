@@ -5,17 +5,9 @@
 </template>
 
 <script>
-import Vue from 'vue';
 import Flickity from 'flickity';
 
-export default Vue.extend({
-
-    data () {
-        return {
-            flickity: {}
-        }
-    },
-
+export default {
     props: {
         options: {
             type: Object,
@@ -31,7 +23,8 @@ export default Vue.extend({
     },
 
     beforeDestroy() {
-        this.destroy();
+        this.flickity.destroy();
+        this.flickity = null;
     },
 
     methods: {
@@ -104,9 +97,9 @@ export default Vue.extend({
         },
 
         data() {
-            Flickity.data(this.$el);
+            return Flickity.data(this.$el);
         }
     },
 
-});
+};
 </script>
