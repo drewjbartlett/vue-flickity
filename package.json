@@ -1,13 +1,15 @@
 {
   "name": "vue-flickity",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Vue Component for Flickity.js (http://flickity.metafizzy.co/).",
   "main": "flickity.vue",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserify": {
-    "transform": ["vueify"]
+    "transform": [
+      "vueify"
+    ]
   },
   "keywords": [
     "flickity",
