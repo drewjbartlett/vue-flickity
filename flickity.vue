@@ -30,7 +30,8 @@ export default {
     },
 
     beforeDestroy() {
-        this.destroy();
+        this.flickity.destroy();
+        this.flickity = null;
     },
 
     methods: {
