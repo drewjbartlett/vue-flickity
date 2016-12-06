@@ -5,10 +5,9 @@
 </template>
 
 <script>
-import Vue from 'vue';
 import Flickity from 'flickity';
 
-export default Vue.extend({
+export default {
 
     data () {
         return {
@@ -108,5 +107,5 @@ export default Vue.extend({
         }
     },
 
-});
+};
 </script>
