@@ -104,7 +104,7 @@ export default {
         },
 
         data() {
-            Flickity.data(this.$el);
+            return Flickity.data(this.$el);
         }
     },
 
