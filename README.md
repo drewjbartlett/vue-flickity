@@ -1,8 +1,8 @@
 # Flickity for Vue.js
 
 <p align="center">
-    <img src="http://flickity.metafizzy.co/img/flickity-illustration.gif" alt="Flickity">
-    <img src="https://vuejs.org/images/logo.png" alt="Vue.js">
+    <img width="200" src="http://flickity.metafizzy.co/img/flickity-illustration.gif" alt="Flickity">
+    <img width="200" src="https://vuejs.org/images/logo.png" alt="Vue.js">
 </p>
 
 ## Vue support
