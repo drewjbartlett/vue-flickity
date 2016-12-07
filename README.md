@@ -1,7 +1,8 @@
 # Flickity for Vue.js
 
 ![Flickity](http://flickity.metafizzy.co/img/flickity-illustration.gif "Flickity")
-
+![Vue.js](https://vuejs.org/images/logo.png "Vue.js")
+https://vuejs.org/images/logo.png
 ## Vue support
 
 Supports only Vue >= 2
