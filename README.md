@@ -13,7 +13,7 @@ Supports only Vue >= 2
 
 See official documentation [here](http://flickity.metafizzy.co/).
 
-    $ npm install vue-flickity
+    $ npm install vue-flickity --save
 
 ```javascript
 import Flickity from 'vue-flickity';
