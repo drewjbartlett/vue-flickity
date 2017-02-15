@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/drewjbartlett/vue-flickity#readme",
   "devDependencies": {
-    "flickity": "^2.0.5",
     "vue": "^2.1.4"
+  },
+  "dependencies": {
+    "flickity": "^2.0.5"
   }
 }
