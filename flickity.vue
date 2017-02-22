@@ -28,76 +28,88 @@ export default {
     },
 
     methods: {
-        next(isWrapped, isInstant) {
+        next (isWrapped, isInstant) {
             this.flickity.next(isWrapped, isInstant);
         },
 
-        previous(isWrapped, isInstant) {
+        previous (isWrapped, isInstant) {
             this.flickity.previous(isWrapped, isInstant);
         },
 
-        select(index, isWrapped, isInstant) {
+        select (index, isWrapped, isInstant) {
             this.flickity.select(index, isWrapped, isInstant);
         },
 
-        selectCell(value, isWrapped, isInstant) {
+        selectCell (value, isWrapped, isInstant) {
             this.flickity.selectCell( value, isWrapped, isInstant );
         },
 
-        resize() {
+        resize () {
             this.flickity.resize();
         },
 
-        reposition() {
+        reposition () {
             this.flickity.reposition();
         },
 
-        prepend(elements) {
+        prepend (elements) {
             this.flickity.prepend(elements);
         },
 
-        append(elements) {
+        append (elements) {
             this.flickity.append(elements);
         },
 
-        insert(elements, index) {
+        insert (elements, index) {
             this.flickity.insert(elements, index);
         },
 
-        remove(elements) {
+        remove (elements) {
             this.flickity.remove(elements);
         },
 
-        playPlayer() {
+        playPlayer () {
             this.flickity.playPlayer();
         },
 
-        stopPlayer() {
+        stopPlayer () {
             this.flickity.stopPlayer();
         },
 
-        pausePlayer() {
+        pausePlayer () {
             this.flickity.pausePlayer();
         },
 
-        unpausePlayer() {
+        unpausePlayer () {
             this.flickity.unpausePlayer();
         },
 
-        destroy() {
+        destroy () {
             this.flickity.destroy();
         },
 
-        reloadCells() {
+        reloadCells () {
             this.flickity.reloadCells();
         },
 
-        getCellElements() {
+        getCellElements () {
             this.flickity.getCellElements();
         },
 
-        data() {
+        data () {
             return Flickity.data(this.$el);
+        },
+
+        on (eventName, listener) {
+            this.flickity.on(eventName, listener);
+        },
+
+        off (eventName, listener) {
+            this.flickity.off(eventName, listener);
+        },
+
+        once (eventName, listener) {
+            this.flickity.once(eventName, listener);
         }
     },
 
