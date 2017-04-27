@@ -1,5 +1,8 @@
 # Flickity for Vue.js
 
+[![npm](https://img.shields.io/npm/v/vue-flickity.svg)](https://www.npmjs.com/package/vue-flickity)
+[![npm](https://img.shields.io/npm/dt/vue-flickity.svg)](https://www.npmjs.com/package/vue-flickity)
+
 A Vue Component for Flickity.js - See a live demo [here](http://drewjbartlett.com/demos/vue-flickity/).
 
 <p align="center">
