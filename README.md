@@ -51,7 +51,7 @@ new Vue({
             this.$refs.flickity.previous();
         }
     }
-};
+});
 ```
 
 ```html
