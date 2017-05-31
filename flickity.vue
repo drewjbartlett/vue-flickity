@@ -40,6 +40,10 @@ export default {
             this.flickity.select(index, isWrapped, isInstant);
         },
 
+        selectedIndex () {
+            return this.flickity.selectedIndex
+        },
+
         selectCell (value, isWrapped, isInstant) {
             this.flickity.selectCell( value, isWrapped, isInstant );
         },
