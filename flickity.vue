@@ -19,7 +19,7 @@ export default {
     },
 
     mounted() {
-        this.flickity = new Flickity(this.$el, this.options);
+      this.init();
     },
 
     beforeDestroy() {
@@ -28,6 +28,10 @@ export default {
     },
 
     methods: {
+        init() {
+            this.flickity = new Flickity(this.$el, this.options);
+        },
+
         next (isWrapped, isInstant) {
             this.flickity.next(isWrapped, isInstant);
         },
@@ -82,6 +86,11 @@ export default {
 
         unpausePlayer () {
             this.flickity.unpausePlayer();
+        },
+
+        rerender() {
+            this.flickity.destroy();
+            this.init();
         },
 
         destroy () {
