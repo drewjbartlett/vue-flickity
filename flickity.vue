@@ -18,11 +18,11 @@ export default {
         },
     },
 
-    mounted() {
+    mounted () {
       this.init();
     },
 
-    beforeDestroy() {
+    beforeDestroy () {
         this.flickity.destroy();
         this.flickity = null;
     },
@@ -92,7 +92,7 @@ export default {
             this.flickity.unpausePlayer();
         },
 
-        rerender() {
+        rerender () {
             this.flickity.destroy();
             this.init();
         },
