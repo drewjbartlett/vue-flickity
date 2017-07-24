@@ -103,4 +103,4 @@ export default {
 
 };
 </script>
-<style src="./../flickity/dist/flickity.css"></style>
+<style src="flickity/dist/flickity.css"></style>
