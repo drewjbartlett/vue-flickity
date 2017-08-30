@@ -30,6 +30,7 @@ export default {
     methods: {
         init() {
             this.flickity = new Flickity(this.$el, this.options);
+            this.$emit('init', this.flickity);
         },
 
         next (isWrapped, isInstant) {
