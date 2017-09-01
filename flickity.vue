@@ -22,7 +22,7 @@ export default {
       this.init();
     },
 
-    beforeDestroy () {
+    destroy () {
         this.flickity.destroy();
         this.flickity = null;
     },
