@@ -1,7 +1,8 @@
 # Flickity for Vue.js
 
-[![npm](https://img.shields.io/npm/v/vue-flickity.svg)](https://www.npmjs.com/package/vue-flickity)
-[![npm](https://img.shields.io/npm/dt/vue-flickity.svg)](https://www.npmjs.com/package/vue-flickity)
+[![npm](https://img.shields.io/npm/v/vue-flickity.svg?style=flat-square)](https://www.npmjs.com/package/vue-flickity)
+[![npm](https://img.shields.io/npm/dt/vue-flickity.svg?style=flat-square)](https://www.npmjs.com/package/vue-flickity)
+[![npm](https://img.shields.io/travis/rapidjs/vue-flickity.svg?branch=master&style=flat-square)](https://www.npmjs.com/package/vue-flickity)
 
 A Vue Component for Flickity.js - See a live demo [here](http://drewjbartlett.com/demos/vue-flickity/).
 
@@ -18,49 +19,48 @@ Supports only Vue >= 2
 
 See official documentation [here](http://flickity.metafizzy.co/).
 
-    $ npm install vue-flickity --save
+  $ npm install vue-flickity --save
 
 ```javascript
 import Flickity from 'vue-flickity';
 
 new Vue({
+  components: {
+    Flickity
+  },
 
-    components: {
-        Flickity
-    },
+  data() {
+    return {
+      flickityOptions: {
+      initialIndex: 3,
+      prevNextButtons: false,
+      pageDots: false,
+      wrapAround: true
 
-    data () {
-        return {
-            flickityOptions: {
-                initialIndex: 3,
-                prevNextButtons: false,
-                pageDots: false,
-                wrapAround: true
-
-                // any options from Flickity can be used
-            }
-        }
-    },
-
-    methods: {
-        next() {
-            this.$refs.flickity.next();
-        },
-
-        previous() {
-            this.$refs.flickity.previous();
-        }
+      // any options from Flickity can be used
+      }
     }
+  },
+
+  methods: {
+    next() {
+      this.$refs.flickity.next();
+    },
+
+    previous() {
+      this.$refs.flickity.previous();
+    }
+  }
 });
 ```
 
 ```html
 <flickity ref="flickity" :options="flickityOptions">
-    <div class="carousel-cell">1</div>
-    <div class="carousel-cell">2</div>
-    <div class="carousel-cell">3</div>
-    <div class="carousel-cell">4</div>
-    <div class="carousel-cell">5</div>
+  <div class="carousel-cell">1</div>
+  <div class="carousel-cell">2</div>
+  <div class="carousel-cell">3</div>
+  <div class="carousel-cell">4</div>
+  <div class="carousel-cell">5</div>
 </flickity>
 
 <!-- if you don't want to use the buttons Flickity provides -->

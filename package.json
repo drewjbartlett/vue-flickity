@@ -4,7 +4,8 @@
   "description": "A Vue Component for Flickity.js (http://flickity.metafizzy.co/).",
   "main": "src/flickity.vue",
   "scripts": {
-    "lint": "eslint src --ext .js,.vue --fix"
+    "lint": "eslint src --ext .js,.vue",
+    "test": "npm run lint"
   },
   "browserify": {
     "transform": [
