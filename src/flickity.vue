@@ -302,6 +302,22 @@ export default {
     slides() {
       return this.$flickity.slides;
     },
+
+    /**
+     * Disable dragging of slider
+     */
+    disableDrag() {
+      this.$flickity.options.draggable = false;
+      this.$flickity.updateDraggable();
+    },
+
+    /**
+     * Enable dragging of slider
+     */
+    enableDrag() {
+      this.$flickity.options.draggable = true;
+      this.$flickity.updateDraggable();
+    },
   },
 
 };
