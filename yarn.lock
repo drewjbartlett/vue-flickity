@@ -501,7 +501,12 @@ esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
 
-ev-emitter@^1.0.2, ev-emitter@~1.0.1:
+ev-emitter@^1.0.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
+  integrity sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q==
+
+ev-emitter@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.0.3.tgz#ee5ef74b6ed28d911b32ddcbfc97867f580937bc"
 
@@ -566,16 +571,17 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flickity:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.0.5.tgz#e338c1b9a66a9c9a5e6948f9dfa48501b4603b6d"
+flickity@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.2.0.tgz#9ac65006d9cc77d2035f7eff33d5d9a3d4a8092f"
+  integrity sha512-K9trFruKtbi4F8nOo+pHjJK4P/Pqix2Udq3lHhUVXfxqmoxuwZHu3nEEiEb49NWpzBrVHHIcnnn8fhcUTkWpgA==
   dependencies:
     desandro-matches-selector "^2.0.0"
     ev-emitter "^1.0.2"
     fizzy-ui-utils "^2.0.0"
     get-size "^2.0.0"
-    tap-listener "^2.0.0"
-    unidragger "^2.1.0"
+    unidragger "^2.3.0"
+    unipointer "^2.3.0"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -1168,12 +1174,6 @@ table@4.0.2:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
-tap-listener@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/tap-listener/-/tap-listener-2.0.0.tgz#d2e11d0d8e7c92b26a56ae4f35538a248b44ad63"
-  dependencies:
-    unipointer "^2.1.0"
-
 text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
@@ -1206,17 +1206,19 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-unidragger@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/unidragger/-/unidragger-2.1.0.tgz#e4c23f5fab8188c637e776d0b3810c7d989e5561"
+unidragger@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/unidragger/-/unidragger-2.3.0.tgz#ab9d9fd62106f3252d88fae5f3a99575e6d31d02"
+  integrity sha512-dVkSqQdwcsaNmXaandBAOcJ4QVvkrDPosfCcZ7opYPkAiisCQaGlNw0pg00lBV4MQoWEXsEaiwhtQlbnvlXrQQ==
   dependencies:
-    unipointer "~2.1.0"
+    unipointer "^2.3.0"
 
-unipointer@^2.1.0, unipointer@~2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/unipointer/-/unipointer-2.1.0.tgz#b1e9fa2986c1306d97330587ba434d285ccfe37f"
+unipointer@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/unipointer/-/unipointer-2.3.0.tgz#ba0dc462ce31c2a88e80810e19c3bae0ce47ed9f"
+  integrity sha512-m85sAoELCZhogI1owtJV3Dva7GxkHk2lI7A0otw3o0OwCuC/Q9gi7ehddigEYIAYbhkqNdri+dU1QQkrcBvirQ==
   dependencies:
-    ev-emitter "~1.0.1"
+    ev-emitter "^1.0.1"
 
 util-deprecate@~1.0.1:
   version "1.0.2"
