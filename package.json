@@ -1,6 +1,6 @@
 {
   "name": "vue-flickity",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Vue Component for Flickity.js (http://flickity.metafizzy.co/).",
   "main": "src/flickity.vue",
   "scripts": {
