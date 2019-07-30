@@ -1,12 +1,10 @@
 <template>
   <div>
-    <slot/>
+    <slot />
   </div>
 </template>
 
 <script>
-
-
 export default {
   props: {
     options: Object,
@@ -27,6 +25,7 @@ export default {
      */
     init() {
       const Flickity = require('flickity');
+
       this.$flickity = new Flickity(this.$el, this.options);
       this.$emit('init', this.$flickity);
     },
@@ -219,6 +218,7 @@ export default {
      */
     data() {
       const Flickity = require('flickity');
+
       return Flickity.data(this.$el);
     },
 
@@ -321,8 +321,7 @@ export default {
       this.$flickity.updateDraggable();
     },
   },
-
 };
 </script>
 
-<style src="flickity/dist/flickity.css"></style>
+<style src='flickity/dist/flickity.css'></style>
