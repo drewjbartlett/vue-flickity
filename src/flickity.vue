@@ -217,7 +217,7 @@ export default {
      * @return {Flickity}
      */
     data() {
-      const Flickity = require('flickity');
+      const Flickity = require('flickity-fade');
 
       return Flickity.data(this.$el);
     },
