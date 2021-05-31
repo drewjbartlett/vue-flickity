@@ -24,7 +24,7 @@ export default {
      * Initialize a new flickity and emit init event.
      */
     init() {
-      const Flickity = require('flickity');
+      const Flickity = require('flickity-fade');
 
       this.$flickity = new Flickity(this.$el, this.options);
       this.$emit('init', this.$flickity);
@@ -217,7 +217,7 @@ export default {
      * @return {Flickity}
      */
     data() {
-      const Flickity = require('flickity');
+      const Flickity = require('flickity-fade');
 
       return Flickity.data(this.$el);
     },

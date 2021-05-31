@@ -36,6 +36,7 @@
     "vue": "^2.1.4"
   },
   "dependencies": {
-    "flickity": "^2.2.0"
+    "flickity": "^2.2.0",
+    "flickity-fade": "^1.0.0"
   }
 }
